@@ -1,0 +1,44 @@
+/* Estilos para tornar o carrossel menor */
+#myCarousel {
+    max-width: 600px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+}
+
+.carousel-inner {
+    max-height: 300px; /* Altura máxima do carrossel */
+}
+
+/* Estilos para tornar as imagens do carrossel responsivas sem cortar */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para os cards */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+/* Estilos para tornar o layout de grid responsivo */
+@media (max-width: 768px) {
+    .col {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col {
+        flex-basis: 100%;
+    }
+}
